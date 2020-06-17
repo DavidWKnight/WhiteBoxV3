@@ -1,0 +1,3 @@
+https://e2e.ti.com/support/audio/f/6/p/681813/2511909#2511909
+https://processors.wiki.ti.com/index.php/AM335x_Audio_Driver's_Guide
+https://github.com/jan1s/hw-bbb-audiocape

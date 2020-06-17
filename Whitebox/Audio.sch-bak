@@ -1,0 +1,826 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Whitebox:TLV320AIC3106IRGZR U1
+U 2 1 5EE67C9F
+P 4150 6300
+F 0 "U1" H 5250 6687 60  0000 C CNN
+F 1 "TLV320AIC3106IRGZR" H 5250 6581 60  0000 C CNN
+F 2 "Package_DFN_QFN:VQFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm" H 5250 6540 60  0001 C CNN
+F 3 "" H 4150 6300 60  0000 C CNN
+F 4 "C183086" H 4150 6300 50  0001 C CNN "LCSC Part #"
+	2    4150 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 6600 4100 6600
+Wire Wire Line
+	4100 6600 4100 6500
+Wire Wire Line
+	4100 6300 4150 6300
+Wire Wire Line
+	4150 6500 4100 6500
+Connection ~ 4100 6500
+Wire Wire Line
+	4100 6500 4100 6400
+Wire Wire Line
+	4150 6400 4100 6400
+Connection ~ 4100 6400
+Wire Wire Line
+	4100 6400 4100 6300
+$Comp
+L Device:C C2
+U 1 1 5EEB442C
+P 1550 6500
+F 0 "C2" H 1435 6454 50  0000 R CNN
+F 1 "1uF" H 1435 6545 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1588 6350 50  0001 C CNN
+F 3 "~" H 1550 6500 50  0001 C CNN
+F 4 "C28323" H 1550 6500 50  0001 C CNN "LCSC Part #"
+	1    1550 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5EEB5F55
+P 1900 6500
+F 0 "C3" H 1785 6454 50  0000 R CNN
+F 1 "0.1uF" H 1785 6545 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1938 6350 50  0001 C CNN
+F 3 "~" H 1900 6500 50  0001 C CNN
+F 4 "C28233" H 1900 6500 50  0001 C CNN "LCSC Part #"
+	1    1900 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5EEB74BC
+P 2350 6500
+F 0 "C4" H 2235 6454 50  0000 R CNN
+F 1 "1uF" H 2235 6545 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2388 6350 50  0001 C CNN
+F 3 "~" H 2350 6500 50  0001 C CNN
+F 4 "C28323" H 2350 6500 50  0001 C CNN "LCSC Part #"
+	1    2350 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5EEB74C2
+P 2700 6500
+F 0 "C7" H 2585 6454 50  0000 R CNN
+F 1 "0.1uF" H 2585 6545 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2738 6350 50  0001 C CNN
+F 3 "~" H 2700 6500 50  0001 C CNN
+F 4 "C28233" H 2700 6500 50  0001 C CNN "LCSC Part #"
+	1    2700 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5EEB9A36
+P 3150 6500
+F 0 "C9" H 3035 6454 50  0000 R CNN
+F 1 "1uF" H 3035 6545 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3188 6350 50  0001 C CNN
+F 3 "~" H 3150 6500 50  0001 C CNN
+F 4 "C28323" H 3150 6500 50  0001 C CNN "LCSC Part #"
+	1    3150 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5EEB9A3C
+P 3500 6500
+F 0 "C11" H 3385 6454 50  0000 R CNN
+F 1 "0.1uF" H 3385 6545 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3538 6350 50  0001 C CNN
+F 3 "~" H 3500 6500 50  0001 C CNN
+F 4 "C28233" H 3500 6500 50  0001 C CNN "LCSC Part #"
+	1    3500 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EEB9E8E
+P 1150 6500
+F 0 "C1" H 1035 6454 50  0000 R CNN
+F 1 "10uF" H 1035 6545 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1188 6350 50  0001 C CNN
+F 3 "~" H 1150 6500 50  0001 C CNN
+F 4 "C15850" H 1150 6500 50  0001 C CNN "LCSC Part #"
+	1    1150 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1550 6350 1550 6300
+Connection ~ 1550 6300
+Wire Wire Line
+	1550 6300 1150 6300
+Wire Wire Line
+	1900 6300 1900 6350
+Connection ~ 1900 6300
+Wire Wire Line
+	1900 6300 1550 6300
+Wire Wire Line
+	2350 6350 2350 6300
+Connection ~ 2350 6300
+Wire Wire Line
+	2350 6300 1900 6300
+Wire Wire Line
+	2700 6350 2700 6300
+Connection ~ 2700 6300
+Wire Wire Line
+	2700 6300 2350 6300
+Wire Wire Line
+	3150 6350 3150 6300
+Connection ~ 3150 6300
+Wire Wire Line
+	3150 6300 2700 6300
+Wire Wire Line
+	3500 6350 3500 6300
+Wire Wire Line
+	3500 6300 3150 6300
+$Comp
+L power:GNDA #PWR04
+U 1 1 5EEBE27F
+P 1150 6750
+F 0 "#PWR04" H 1150 6500 50  0001 C CNN
+F 1 "GNDA" H 1155 6577 50  0000 C CNN
+F 2 "" H 1150 6750 50  0001 C CNN
+F 3 "" H 1150 6750 50  0001 C CNN
+	1    1150 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 6700 3500 6650
+Wire Wire Line
+	3150 6650 3150 6700
+Connection ~ 3150 6700
+Wire Wire Line
+	3150 6700 3500 6700
+Wire Wire Line
+	2700 6700 2700 6650
+Connection ~ 2700 6700
+Wire Wire Line
+	2700 6700 3150 6700
+Wire Wire Line
+	2350 6650 2350 6700
+Connection ~ 2350 6700
+Wire Wire Line
+	2350 6700 2700 6700
+Wire Wire Line
+	1900 6700 1900 6650
+Connection ~ 1900 6700
+Wire Wire Line
+	1900 6700 2350 6700
+Wire Wire Line
+	1550 6650 1550 6700
+Connection ~ 1550 6700
+Wire Wire Line
+	1550 6700 1900 6700
+Wire Wire Line
+	1150 6700 1550 6700
+Connection ~ 3500 6300
+$Comp
+L power:+1V8 #PWR09
+U 1 1 5EEEB046
+P 3950 6750
+F 0 "#PWR09" H 3950 6600 50  0001 C CNN
+F 1 "+1V8" H 3965 6923 50  0000 C CNN
+F 2 "" H 3950 6750 50  0001 C CNN
+F 3 "" H 3950 6750 50  0001 C CNN
+	1    3950 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 6750 3950 6800
+Wire Wire Line
+	3950 6800 4150 6800
+Wire Wire Line
+	3500 6300 4100 6300
+Connection ~ 4100 6300
+$Comp
+L Device:C C8
+U 1 1 5EEF2B81
+P 3000 7000
+F 0 "C8" H 2885 6954 50  0000 R CNN
+F 1 "1uF" H 2885 7045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 6850 50  0001 C CNN
+F 3 "~" H 3000 7000 50  0001 C CNN
+F 4 "C28323" H 3000 7000 50  0001 C CNN "LCSC Part #"
+	1    3000 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5EEF2B87
+P 3350 7000
+F 0 "C10" H 3235 6954 50  0000 R CNN
+F 1 "0.1uF" H 3235 7045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3388 6850 50  0001 C CNN
+F 3 "~" H 3350 7000 50  0001 C CNN
+F 4 "C28233" H 3350 7000 50  0001 C CNN "LCSC Part #"
+	1    3350 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5EEF38D0
+P 3750 7200
+F 0 "C12" H 3635 7154 50  0000 R CNN
+F 1 "1uF" H 3635 7245 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3788 7050 50  0001 C CNN
+F 3 "~" H 3750 7200 50  0001 C CNN
+F 4 "C28323" H 3750 7200 50  0001 C CNN "LCSC Part #"
+	1    3750 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5EEF38D6
+P 4100 7200
+F 0 "C13" H 3985 7154 50  0000 R CNN
+F 1 "0.1uF" H 3985 7245 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4138 7050 50  0001 C CNN
+F 3 "~" H 4100 7200 50  0001 C CNN
+F 4 "C28233" H 4100 7200 50  0001 C CNN "LCSC Part #"
+	1    4100 7200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 6800 3350 6800
+Wire Wire Line
+	3000 6800 3000 6850
+Connection ~ 3950 6800
+Wire Wire Line
+	3350 6850 3350 6800
+Connection ~ 3350 6800
+Wire Wire Line
+	3350 6800 3000 6800
+Wire Wire Line
+	4150 7000 4100 7000
+Wire Wire Line
+	3750 7000 3750 7050
+Wire Wire Line
+	4100 7050 4100 7000
+Connection ~ 4100 7000
+Wire Wire Line
+	4100 7000 3950 7000
+$Comp
+L power:GND #PWR06
+U 1 1 5EEF976B
+P 3000 7250
+F 0 "#PWR06" H 3000 7000 50  0001 C CNN
+F 1 "GND" H 3005 7077 50  0000 C CNN
+F 2 "" H 3000 7250 50  0001 C CNN
+F 3 "" H 3000 7250 50  0001 C CNN
+	1    3000 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 7250 3000 7200
+Wire Wire Line
+	3000 7200 3350 7200
+Wire Wire Line
+	3350 7200 3350 7150
+Connection ~ 3000 7200
+Wire Wire Line
+	3000 7200 3000 7150
+$Comp
+L power:GND #PWR07
+U 1 1 5EEFDC60
+P 3750 7450
+F 0 "#PWR07" H 3750 7200 50  0001 C CNN
+F 1 "GND" H 3755 7277 50  0000 C CNN
+F 2 "" H 3750 7450 50  0001 C CNN
+F 3 "" H 3750 7450 50  0001 C CNN
+	1    3750 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 7350 3750 7400
+Wire Wire Line
+	3750 7400 4100 7400
+Wire Wire Line
+	4100 7400 4100 7350
+Connection ~ 3750 7400
+Wire Wire Line
+	3750 7400 3750 7450
+$Comp
+L power:GND #PWR011
+U 1 1 5EF04B7E
+P 6400 6850
+F 0 "#PWR011" H 6400 6600 50  0001 C CNN
+F 1 "GND" H 6405 6677 50  0000 C CNN
+F 2 "" H 6400 6850 50  0001 C CNN
+F 3 "" H 6400 6850 50  0001 C CNN
+	1    6400 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 6800 6400 6800
+Wire Wire Line
+	6400 6800 6400 6850
+Wire Wire Line
+	1150 6750 1150 6700
+Connection ~ 1150 6700
+Wire Wire Line
+	1150 6700 1150 6650
+Wire Wire Line
+	1150 6350 1150 6300
+$Comp
+L power:GNDA #PWR012
+U 1 1 5EF097EF
+P 6650 6850
+F 0 "#PWR012" H 6650 6600 50  0001 C CNN
+F 1 "GNDA" H 6655 6677 50  0000 C CNN
+F 2 "" H 6650 6850 50  0001 C CNN
+F 3 "" H 6650 6850 50  0001 C CNN
+	1    6650 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 6400 6400 6400
+Wire Wire Line
+	6400 6400 6400 6500
+Wire Wire Line
+	6400 6700 6350 6700
+Wire Wire Line
+	6350 6600 6400 6600
+Connection ~ 6400 6600
+Wire Wire Line
+	6400 6600 6400 6700
+Wire Wire Line
+	6350 6500 6400 6500
+Connection ~ 6400 6500
+Wire Wire Line
+	6400 6500 6400 6600
+Wire Wire Line
+	6400 6700 6650 6700
+Wire Wire Line
+	6650 6700 6650 6850
+Connection ~ 6400 6700
+Text HLabel 4450 1450 0    50   Input ~ 0
+AIC_DIN
+Text HLabel 6850 1450 2    50   Input ~ 0
+AIC_DOUT
+Text HLabel 4300 2550 0    50   Input ~ 0
+AIC_MCLK
+Text HLabel 4450 3750 0    50   Input ~ 0
+AIC_WCLK
+Text HLabel 4000 3150 0    50   Input ~ 0
+AIC_BCLK
+Text HLabel 4550 3450 0    50   Input ~ 0
+AIC_SCL
+Text HLabel 4550 3550 0    50   Input ~ 0
+AIC_SDA
+$Comp
+L power:GND #PWR010
+U 1 1 5EE7EE5D
+P 3750 3750
+F 0 "#PWR010" H 3750 3500 50  0001 C CNN
+F 1 "GND" H 3755 3577 50  0000 C CNN
+F 2 "" H 3750 3750 50  0001 C CNN
+F 3 "" H 3750 3750 50  0001 C CNN
+	1    3750 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3650 3750 3750
+Text Notes 3750 3750 2    50   ~ 0
+I2C Control Mode
+$Comp
+L power:GNDA #PWR08
+U 1 1 5EE82420
+P 3750 3350
+F 0 "#PWR08" H 3750 3100 50  0001 C CNN
+F 1 "GNDA" H 3755 3177 50  0000 C CNN
+F 2 "" H 3750 3350 50  0001 C CNN
+F 3 "" H 3750 3350 50  0001 C CNN
+	1    3750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3250 3750 3350
+Text HLabel 4550 3050 0    50   Input ~ 0
+AIC_RESET
+Text Label 2950 2300 0    50   ~ 0
+LINE1_LP
+Text Label 2950 2100 0    50   ~ 0
+LINE1_LM
+$Comp
+L power:GNDA #PWR05
+U 1 1 5EE88957
+P 1750 2650
+F 0 "#PWR05" H 1750 2400 50  0001 C CNN
+F 1 "GNDA" H 1755 2477 50  0000 C CNN
+F 2 "" H 1750 2650 50  0001 C CNN
+F 3 "" H 1750 2650 50  0001 C CNN
+	1    1750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2300 2900 2300
+Wire Wire Line
+	2800 2100 2900 2100
+Wire Wire Line
+	1750 2000 1700 2000
+Text Label 4550 1750 2    50   ~ 0
+LINE1_LP
+Text Label 4550 1650 2    50   ~ 0
+LINE1_LM
+$Comp
+L Device:C C6
+U 1 1 5EEB395B
+P 2650 2300
+F 0 "C6" V 2600 2200 50  0000 C CNN
+F 1 "0.47uF" V 2600 2500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2688 2150 50  0001 C CNN
+F 3 "~" H 2650 2300 50  0001 C CNN
+F 4 "C13967" H 2650 2300 50  0001 C CNN "LCSC Part #"
+	1    2650 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5EEB40A2
+P 2650 2100
+F 0 "C5" V 2700 2000 50  0000 C CNN
+F 1 "0.47uF" V 2700 2300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2688 1950 50  0001 C CNN
+F 3 "~" H 2650 2100 50  0001 C CNN
+F 4 "C13967" H 2650 2100 50  0001 C CNN "LCSC Part #"
+	1    2650 2100
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4550 1850
+NoConn ~ 4550 1950
+NoConn ~ 4550 2050
+NoConn ~ 4550 2150
+NoConn ~ 4550 2250
+NoConn ~ 4550 2350
+NoConn ~ 4550 2750
+NoConn ~ 4550 2850
+NoConn ~ 6750 2250
+Text Label 6750 2450 0    50   ~ 0
+MONO_LOM
+Text Label 6750 2550 0    50   ~ 0
+MONO_LOP
+NoConn ~ 6750 1550
+NoConn ~ 6750 1650
+NoConn ~ 6750 1750
+NoConn ~ 6750 1850
+NoConn ~ 6750 1950
+NoConn ~ 6750 2050
+NoConn ~ 6750 2750
+NoConn ~ 6750 2850
+Wire Wire Line
+	3950 6800 3950 7000
+Connection ~ 3950 7000
+Wire Wire Line
+	3950 7000 3750 7000
+Wire Wire Line
+	1750 2000 1750 2650
+Wire Wire Line
+	1700 2300 2500 2300
+NoConn ~ 4550 3350
+NoConn ~ 6750 3650
+NoConn ~ 6750 3550
+NoConn ~ 6750 3150
+NoConn ~ 6750 3050
+$Comp
+L power:GNDA #PWR013
+U 1 1 5F1FBF62
+P 9350 2650
+F 0 "#PWR013" H 9350 2400 50  0001 C CNN
+F 1 "GNDA" H 9355 2477 50  0000 C CNN
+F 2 "" H 9350 2650 50  0001 C CNN
+F 3 "" H 9350 2650 50  0001 C CNN
+	1    9350 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2300 8150 2300
+Wire Wire Line
+	8300 2100 8150 2100
+Wire Wire Line
+	9350 2000 9400 2000
+$Comp
+L Device:C C15
+U 1 1 5F1FBF6B
+P 8450 2300
+F 0 "C15" V 8400 2150 50  0000 C CNN
+F 1 "0.47uF" V 8400 2500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8488 2150 50  0001 C CNN
+F 3 "~" H 8450 2300 50  0001 C CNN
+F 4 "C13967" H 8450 2300 50  0001 C CNN "LCSC Part #"
+	1    8450 2300
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5F1FBF71
+P 8450 2100
+F 0 "C14" V 8500 1950 50  0000 C CNN
+F 1 "0.47uF" V 8500 2300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8488 1950 50  0001 C CNN
+F 3 "~" H 8450 2100 50  0001 C CNN
+F 4 "C13967" H 8450 2100 50  0001 C CNN "LCSC Part #"
+	1    8450 2100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9350 2000 9350 2650
+Wire Wire Line
+	9400 2300 8600 2300
+Text Label 8100 2100 2    50   ~ 0
+MONO_LOM
+Text Label 8100 2300 2    50   ~ 0
+MONO_LOP
+Text GLabel 4050 6200 0    50   Input ~ 0
+3V3A
+Wire Wire Line
+	4050 6200 4100 6200
+Wire Wire Line
+	4100 6200 4100 6300
+Wire Wire Line
+	1700 2100 2500 2100
+NoConn ~ 1700 2200
+NoConn ~ 1700 2400
+$Comp
+L Connector:AudioJack3_SwitchTR J1
+U 1 1 5F5255D1
+P 1500 2100
+F 0 "J1" H 1482 2425 50  0000 C CNN
+F 1 "AudioJack3_SwitchTR" H 1482 2334 50  0000 C CNN
+F 2 "Whitebox:SN37A14B" H 1500 2100 50  0001 C CNN
+F 3 "~" H 1500 2100 50  0001 C CNN
+	1    1500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack3_SwitchTR J2
+U 1 1 5F52C261
+P 9600 2100
+F 0 "J2" H 9582 2425 50  0000 C CNN
+F 1 "AudioJack3_SwitchTR" H 9582 2334 50  0000 C CNN
+F 2 "Whitebox:SN37A14B" H 9600 2100 50  0001 C CNN
+F 3 "~" H 9600 2100 50  0001 C CNN
+	1    9600 2100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2100 9400 2100
+NoConn ~ 9400 2200
+NoConn ~ 9400 2400
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5F5CB1ED
+P 2900 2000
+F 0 "TP4" H 2958 2118 50  0000 L CNN
+F 1 "TestPoint" H 2958 2027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 3100 2000 50  0001 C CNN
+F 3 "~" H 3100 2000 50  0001 C CNN
+	1    2900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5F5CC118
+P 2900 2400
+F 0 "TP5" H 2842 2426 50  0000 R CNN
+F 1 "TestPoint" H 2842 2517 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 3100 2400 50  0001 C CNN
+F 3 "~" H 3100 2400 50  0001 C CNN
+	1    2900 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 2400 2900 2300
+Connection ~ 2900 2300
+Wire Wire Line
+	2900 2300 2950 2300
+Wire Wire Line
+	2900 2000 2900 2100
+Connection ~ 2900 2100
+Wire Wire Line
+	2900 2100 2950 2100
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5F5D11FE
+P 8150 2450
+F 0 "TP13" H 8092 2476 50  0000 R CNN
+F 1 "TestPoint" H 8092 2567 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 8350 2450 50  0001 C CNN
+F 3 "~" H 8350 2450 50  0001 C CNN
+	1    8150 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5F5D8E39
+P 8150 1950
+F 0 "TP12" H 8208 2068 50  0000 L CNN
+F 1 "TestPoint" H 8208 1977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 8350 1950 50  0001 C CNN
+F 3 "~" H 8350 1950 50  0001 C CNN
+	1    8150 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1950 8150 2100
+Connection ~ 8150 2100
+Wire Wire Line
+	8150 2100 8100 2100
+Wire Wire Line
+	8150 2450 8150 2300
+Connection ~ 8150 2300
+Wire Wire Line
+	8150 2300 8100 2300
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5F81E6D4
+P 4350 2450
+F 0 "TP8" H 4408 2568 50  0000 L CNN
+F 1 "TestPoint" H 4408 2477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4550 2450 50  0001 C CNN
+F 3 "~" H 4550 2450 50  0001 C CNN
+	1    4350 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2550 4350 2550
+Wire Wire Line
+	4350 2450 4350 2550
+Connection ~ 4350 2550
+Wire Wire Line
+	4350 2550 4550 2550
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5F82B114
+P 4050 3050
+F 0 "TP6" H 4108 3168 50  0000 L CNN
+F 1 "TestPoint" H 4108 3077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4250 3050 50  0001 C CNN
+F 3 "~" H 4250 3050 50  0001 C CNN
+	1    4050 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3150 4050 3150
+Wire Wire Line
+	4050 3050 4050 3150
+Connection ~ 4050 3150
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5F831599
+P 4500 3850
+F 0 "TP10" H 4443 3876 50  0000 R CNN
+F 1 "TestPoint" H 4443 3967 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4700 3850 50  0001 C CNN
+F 3 "~" H 4700 3850 50  0001 C CNN
+	1    4500 3850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4500 3850 4500 3750
+Wire Wire Line
+	4500 3750 4550 3750
+Wire Wire Line
+	4500 3750 4450 3750
+Connection ~ 4500 3750
+Wire Wire Line
+	3750 3650 4550 3650
+Wire Wire Line
+	4050 3150 4550 3150
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5F844BA1
+P 4500 1350
+F 0 "TP9" H 4442 1468 50  0000 R CNN
+F 1 "TestPoint" H 4442 1377 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4700 1350 50  0001 C CNN
+F 3 "~" H 4700 1350 50  0001 C CNN
+	1    4500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Whitebox:TLV320AIC3106IRGZR U1
+U 1 1 5EE68BBE
+P 4550 1450
+F 0 "U1" H 5650 1837 60  0000 C CNN
+F 1 "TLV320AIC3106IRGZR" H 5650 1731 60  0000 C CNN
+F 2 "Package_DFN_QFN:VQFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm" H 5650 1690 60  0001 C CNN
+F 3 "" H 4550 1450 60  0000 C CNN
+F 4 "C183086" H 4550 1450 50  0001 C CNN "LCSC Part #"
+	1    4550 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1450 4500 1450
+Wire Wire Line
+	4500 1450 4500 1350
+Connection ~ 4500 1450
+Wire Wire Line
+	4500 1450 4550 1450
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5F85604E
+P 6800 1350
+F 0 "TP11" H 6742 1468 50  0000 R CNN
+F 1 "TestPoint" H 6742 1377 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 7000 1350 50  0001 C CNN
+F 3 "~" H 7000 1350 50  0001 C CNN
+	1    6800 1350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1450 6800 1450
+Wire Wire Line
+	6800 1450 6800 1350
+Connection ~ 6800 1450
+Wire Wire Line
+	6800 1450 6750 1450
+Wire Wire Line
+	3750 3250 4550 3250
+Text HLabel 2550 3300 0    50   Input ~ 0
+AIC_SCL
+Text HLabel 2550 3500 0    50   Input ~ 0
+AIC_SDA
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F87327D
+P 2600 3300
+F 0 "TP2" V 2646 3488 50  0000 L CNN
+F 1 "TestPoint" V 2555 3488 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 2800 3300 50  0001 C CNN
+F 3 "~" H 2800 3300 50  0001 C CNN
+	1    2600 3300
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5F877C1E
+P 2600 3500
+F 0 "TP3" V 2646 3688 50  0000 L CNN
+F 1 "TestPoint" V 2555 3688 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 2800 3500 50  0001 C CNN
+F 3 "~" H 2800 3500 50  0001 C CNN
+	1    2600 3500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2550 3500 2600 3500
+Wire Wire Line
+	2600 3300 2550 3300
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5F895311
+P 4100 6100
+F 0 "TP7" H 4158 6218 50  0000 L CNN
+F 1 "TestPoint" H 4158 6127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4300 6100 50  0001 C CNN
+F 3 "~" H 4300 6100 50  0001 C CNN
+	1    4100 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 6200 4100 6100
+Connection ~ 4100 6200
+$Comp
+L power:GND #PWR091
+U 1 1 5F99EF28
+P 6950 3550
+F 0 "#PWR091" H 6950 3300 50  0001 C CNN
+F 1 "GND" H 6955 3377 50  0000 C CNN
+F 2 "" H 6950 3550 50  0001 C CNN
+F 3 "" H 6950 3550 50  0001 C CNN
+	1    6950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3350 6950 3350
+Wire Wire Line
+	6950 3350 6950 3450
+Wire Wire Line
+	6750 3450 6950 3450
+Connection ~ 6950 3450
+Wire Wire Line
+	6950 3450 6950 3550
+Text Notes 2200 3200 0    50   ~ 0
+I2C Address 0011000
+$EndSCHEMATC

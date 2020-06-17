@@ -1,0 +1,178 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title "The Whitebox"
+Date "2020-06-14"
+Rev "A"
+Comp "Knight's Electronics"
+Comment1 "Designed by David Knight"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2500 1450 1950 1150
+U 5EE67B04
+F0 "Audio" 50
+F1 "Audio.sch" 50
+F2 "AIC_DIN" I R 4450 1750 50 
+F3 "AIC_DOUT" I R 4450 1650 50 
+F4 "AIC_MCLK" I R 4450 1550 50 
+F5 "AIC_WCLK" I R 4450 1850 50 
+F6 "AIC_BCLK" I R 4450 1950 50 
+F7 "AIC_SCL" I R 4450 2150 50 
+F8 "AIC_SDA" I R 4450 2250 50 
+F9 "AIC_RESET" I R 4450 2500 50 
+$EndSheet
+$Sheet
+S 2500 3300 1950 900 
+U 5EE67B2E
+F0 "Power" 50
+F1 "Power.sch" 50
+$EndSheet
+$Sheet
+S 6550 1450 2000 1550
+U 5EE67B6F
+F0 "Processor" 50
+F1 "Processor.sch" 50
+F2 "AIC_MCLK" I L 6550 1550 50 
+F3 "AIC_DOUT" I L 6550 1650 50 
+F4 "AIC_BCLK" I L 6550 1950 50 
+F5 "AIC_WCLK" I L 6550 1850 50 
+F6 "AIC_DIN" I L 6550 1750 50 
+F7 "AIC_SDA" I L 6550 2150 50 
+F8 "AIC_SCL" I L 6550 2250 50 
+F9 "~POCKETBEAGLE_RESET" I L 6550 2900 50 
+F10 "IO_SDA" I L 6550 2400 50 
+F11 "IO_SCL" I L 6550 2500 50 
+$EndSheet
+$Sheet
+S 6550 3300 2000 900 
+U 5EE77A0E
+F0 "ExternalIO" 50
+F1 "ExternalIO.sch" 50
+F2 "IO_SDA" I L 6550 3400 50 
+F3 "IO_SCL" I L 6550 3500 50 
+F4 "~IO_RESET" I L 6550 3800 50 
+$EndSheet
+Text Label 4450 1550 0    50   ~ 0
+AIC_MCLK
+Text Label 4450 1650 0    50   ~ 0
+AIC_DOUT
+Text Label 4450 1750 0    50   ~ 0
+AIC_DIN
+Text Label 4450 1850 0    50   ~ 0
+AIC_WCLK
+Text Label 4450 1950 0    50   ~ 0
+AIC_BCLK
+Text Label 4450 2150 0    50   ~ 0
+AIC_SCL
+Text Label 4450 2250 0    50   ~ 0
+AIC_SDA
+Text Label 6550 1550 2    50   ~ 0
+AIC_MCLK
+Text Label 6550 1650 2    50   ~ 0
+AIC_DOUT
+Text Label 6550 1750 2    50   ~ 0
+AIC_DIN
+Text Label 6550 1850 2    50   ~ 0
+AIC_WCLK
+Text Label 6550 1950 2    50   ~ 0
+AIC_BCLK
+Text Label 6550 2150 2    50   ~ 0
+AIC_SCL
+Text Label 6550 2250 2    50   ~ 0
+AIC_SDA
+Text Label 6550 2400 2    50   ~ 0
+IO_SDA
+Text Label 6550 2500 2    50   ~ 0
+IO_SCL
+Text Label 6550 3400 2    50   ~ 0
+IO_SDA
+Text Label 6550 3500 2    50   ~ 0
+IO_SCL
+Text Label 4450 2500 0    50   ~ 0
+~AIC_RESET
+Text Label 6550 2900 2    50   ~ 0
+~POCKETBEAGLE_RESET
+Text Label 6550 3800 2    50   ~ 0
+~IO_RESET
+$Comp
+L Device:R R1
+U 1 1 5F27ED77
+P 2800 5100
+F 0 "R1" H 2600 5150 50  0000 L CNN
+F 1 "10k" H 2600 5050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2730 5100 50  0001 C CNN
+F 3 "~" H 2800 5100 50  0001 C CNN
+F 4 "C17414" H 2800 5100 50  0001 C CNN "LCSC Part #"
+	1    2800 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5350 2800 5250
+Wire Wire Line
+	2800 5450 2800 5350
+Connection ~ 2800 5350
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5F2817C0
+P 2800 4900
+F 0 "#PWR01" H 2800 4750 50  0001 C CNN
+F 1 "+3V3" H 2815 5073 50  0000 C CNN
+F 2 "" H 2800 4900 50  0001 C CNN
+F 3 "" H 2800 4900 50  0001 C CNN
+	1    2800 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4950 2800 4900
+Text Label 2700 5350 2    50   ~ 0
+~AIC_RESET
+Text Label 2850 5350 0    50   ~ 0
+~IO_RESET
+$Comp
+L power:GND #PWR02
+U 1 1 5F28614F
+P 2800 5950
+F 0 "#PWR02" H 2800 5700 50  0001 C CNN
+F 1 "GND" H 2805 5777 50  0000 C CNN
+F 2 "" H 2800 5950 50  0001 C CNN
+F 3 "" H 2800 5950 50  0001 C CNN
+	1    2800 5950
+	1    0    0    -1  
+$EndComp
+Text Label 2250 5350 2    50   ~ 0
+~POCKETBEAGLE_RESET
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F5878D7
+P 2800 5650
+F 0 "SW1" V 2846 5602 50  0000 R CNN
+F 1 "SW_Push" V 2755 5602 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2800 5850 50  0001 C CNN
+F 3 "~" H 2800 5850 50  0001 C CNN
+	1    2800 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2800 5850 2800 5950
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F7E73DA
+P 3250 5350
+F 0 "TP1" V 3204 5538 50  0000 L CNN
+F 1 "TestPoint" V 3295 5538 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 3450 5350 50  0001 C CNN
+F 3 "~" H 3450 5350 50  0001 C CNN
+	1    3250 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 5350 3250 5350
+Wire Wire Line
+	2250 5350 2800 5350
+$EndSCHEMATC

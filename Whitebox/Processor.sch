@@ -1,0 +1,783 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:PocketBeagle U5
+U 1 1 5EE66595
+P 7350 3300
+F 0 "U5" H 6500 5450 50  0000 C CNN
+F 1 "PocketBeagle" H 8250 5450 50  0000 C CNN
+F 2 "Module:BeagleBoard_PocketBeagle" H 7350 3300 50  0001 C CNN
+F 3 "https://github.com/beagleboard/pocketbeagle/wiki/System-Reference-Manual" H 9050 2000 50  0001 C CNN
+	1    7350 3300
+	1    0    0    -1  
+$EndComp
+Text HLabel 6350 4700 0    50   Input ~ 0
+AIC_MCLK
+Text HLabel 6350 2000 0    50   Input ~ 0
+AIC_DOUT
+Text HLabel 8350 4300 2    50   Input ~ 0
+AIC_BCLK
+Text HLabel 6350 4100 0    50   Input ~ 0
+AIC_WCLK
+Text HLabel 6350 4600 0    50   Input ~ 0
+AIC_DIN
+Text Notes 11750 900  0    50   ~ 0
+AIC Pins found by comparing pocketbeagle System Reference Manual tables 7 and 8\nwith section 4.3 of McASP Design Guide- Tips, Tricks, and Practical Examples
+Text Notes 11750 650  0    100  ~ 0
+Notes
+$Comp
+L power:GND #PWR035
+U 1 1 5EF4AB5A
+P 7250 5600
+F 0 "#PWR035" H 7250 5350 50  0001 C CNN
+F 1 "GND" H 7255 5427 50  0000 C CNN
+F 2 "" H 7250 5600 50  0001 C CNN
+F 3 "" H 7250 5600 50  0001 C CNN
+	1    7250 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 5600 7250 5550
+Wire Wire Line
+	7250 5550 7450 5550
+Wire Wire Line
+	7450 5550 7450 5500
+Connection ~ 7250 5550
+Wire Wire Line
+	7250 5550 7250 5500
+$Comp
+L power:+5V #PWR034
+U 1 1 5EF5004F
+P 6750 1000
+F 0 "#PWR034" H 6750 850 50  0001 C CNN
+F 1 "+5V" H 6765 1173 50  0000 C CNN
+F 2 "" H 6750 1000 50  0001 C CNN
+F 3 "" H 6750 1000 50  0001 C CNN
+	1    6750 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1000 6750 1100
+Text HLabel 6350 5000 0    50   Input ~ 0
+~POCKETBEAGLE_RESET
+$Comp
+L power:+3V3 #PWR037
+U 1 1 5EF55F9E
+P 7550 850
+F 0 "#PWR037" H 7550 700 50  0001 C CNN
+F 1 "+3V3" H 7565 1023 50  0000 C CNN
+F 2 "" H 7550 850 50  0001 C CNN
+F 3 "" H 7550 850 50  0001 C CNN
+	1    7550 850 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6950 1100
+NoConn ~ 7150 1100
+NoConn ~ 7850 1100
+NoConn ~ 7950 1100
+$Comp
+L power:+1V8 #PWR036
+U 1 1 5EF62397
+P 7350 1000
+F 0 "#PWR036" H 7350 850 50  0001 C CNN
+F 1 "+1V8" H 7365 1173 50  0000 C CNN
+F 2 "" H 7350 1000 50  0001 C CNN
+F 3 "" H 7350 1000 50  0001 C CNN
+	1    7350 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1100 7350 1000
+NoConn ~ 8350 1900
+NoConn ~ 8350 1800
+NoConn ~ 8350 1700
+NoConn ~ 8350 1600
+NoConn ~ 8350 1500
+Wire Wire Line
+	7550 850  7550 900 
+NoConn ~ 7650 1100
+NoConn ~ 6350 1500
+NoConn ~ 6350 1600
+NoConn ~ 6350 1700
+NoConn ~ 6350 1900
+NoConn ~ 6350 2200
+NoConn ~ 6350 3000
+NoConn ~ 6350 3200
+NoConn ~ 6350 3300
+NoConn ~ 6350 3400
+NoConn ~ 6350 3500
+NoConn ~ 6350 3600
+NoConn ~ 6350 3700
+NoConn ~ 6350 3800
+NoConn ~ 6350 3900
+NoConn ~ 6350 4200
+NoConn ~ 6350 4300
+NoConn ~ 6350 4400
+NoConn ~ 6350 4500
+NoConn ~ 6350 4800
+NoConn ~ 6350 5200
+NoConn ~ 8350 4600
+NoConn ~ 8350 4400
+NoConn ~ 8350 4100
+NoConn ~ 8350 4000
+NoConn ~ 8350 3800
+NoConn ~ 8350 3700
+NoConn ~ 8350 2900
+NoConn ~ 8350 2800
+NoConn ~ 8350 2700
+NoConn ~ 8350 2600
+NoConn ~ 8350 2400
+NoConn ~ 8350 2300
+NoConn ~ 8350 2200
+NoConn ~ 8350 2100
+$Comp
+L Transistor_FET:2N7002 Q1
+U 1 1 5F46063F
+P 1050 2250
+F 0 "Q1" H 1254 2296 50  0000 L CNN
+F 1 "2N7002" H 1254 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1250 2175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 1050 2250 50  0001 L CNN
+F 4 "C8545" H 1050 2250 50  0001 C CNN "LCSC Part #"
+	1    1050 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5F463724
+P 950 1800
+F 0 "R26" H 1020 1846 50  0000 L CNN
+F 1 "100" H 1020 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 880 1800 50  0001 C CNN
+F 3 "~" H 950 1800 50  0001 C CNN
+F 4 "C17408" H 950 1800 50  0001 C CNN "LCSC Part #"
+	1    950  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5F463B1B
+P 950 1400
+F 0 "D2" V 989 1282 50  0000 R CNN
+F 1 "LED" V 898 1282 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 950 1400 50  0001 C CNN
+F 3 "~" H 950 1400 50  0001 C CNN
+F 4 "C72041" H 950 1400 50  0001 C CNN "LCSC Part #"
+	1    950  1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR078
+U 1 1 5F4641A9
+P 950 2500
+F 0 "#PWR078" H 950 2250 50  0001 C CNN
+F 1 "GND" H 955 2327 50  0000 C CNN
+F 2 "" H 950 2500 50  0001 C CNN
+F 3 "" H 950 2500 50  0001 C CNN
+	1    950  2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  1250 950  1200
+Wire Wire Line
+	950  2500 950  2450
+Text Notes 1600 700  0    100  ~ 0
+Status LEDs
+Text Label 1350 2250 0    50   ~ 0
+LED0
+$Comp
+L Transistor_FET:2N7002 Q3
+U 1 1 5F477DAB
+P 1950 2250
+F 0 "Q3" H 2154 2296 50  0000 L CNN
+F 1 "2N7002" H 2154 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2150 2175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 1950 2250 50  0001 L CNN
+F 4 "C8545" H 1950 2250 50  0001 C CNN "LCSC Part #"
+	1    1950 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 5F477DB1
+P 1850 1850
+F 0 "R28" H 1920 1896 50  0000 L CNN
+F 1 "100" H 1920 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1780 1850 50  0001 C CNN
+F 3 "~" H 1850 1850 50  0001 C CNN
+F 4 "C17408" H 1850 1850 50  0001 C CNN "LCSC Part #"
+	1    1850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5F477DB7
+P 1850 1500
+F 0 "D4" V 1889 1382 50  0000 R CNN
+F 1 "LED" V 1798 1382 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 1850 1500 50  0001 C CNN
+F 3 "~" H 1850 1500 50  0001 C CNN
+F 4 "C72041" H 1850 1500 50  0001 C CNN "LCSC Part #"
+	1    1850 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR082
+U 1 1 5F477DBD
+P 1850 2500
+F 0 "#PWR082" H 1850 2250 50  0001 C CNN
+F 1 "GND" H 1855 2327 50  0000 C CNN
+F 2 "" H 1850 2500 50  0001 C CNN
+F 3 "" H 1850 2500 50  0001 C CNN
+	1    1850 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1350 1850 1300
+Wire Wire Line
+	1850 1700 1850 1650
+Wire Wire Line
+	1850 2050 1850 2000
+Wire Wire Line
+	1850 2500 1850 2450
+Text Label 2150 2250 0    50   ~ 0
+LED1
+$Comp
+L Transistor_FET:2N7002 Q5
+U 1 1 5F47AC22
+P 2850 2250
+F 0 "Q5" H 3054 2296 50  0000 L CNN
+F 1 "2N7002" H 3054 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3050 2175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2850 2250 50  0001 L CNN
+F 4 "C8545" H 2850 2250 50  0001 C CNN "LCSC Part #"
+	1    2850 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 5F47AC28
+P 2750 1850
+F 0 "R30" H 2820 1896 50  0000 L CNN
+F 1 "100" H 2820 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2680 1850 50  0001 C CNN
+F 3 "~" H 2750 1850 50  0001 C CNN
+F 4 "C17408" H 2750 1850 50  0001 C CNN "LCSC Part #"
+	1    2750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5F47AC2E
+P 2750 1500
+F 0 "D6" V 2789 1382 50  0000 R CNN
+F 1 "LED" V 2698 1382 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 2750 1500 50  0001 C CNN
+F 3 "~" H 2750 1500 50  0001 C CNN
+F 4 "C72041" H 2750 1500 50  0001 C CNN "LCSC Part #"
+	1    2750 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR086
+U 1 1 5F47AC34
+P 2750 2500
+F 0 "#PWR086" H 2750 2250 50  0001 C CNN
+F 1 "GND" H 2755 2327 50  0000 C CNN
+F 2 "" H 2750 2500 50  0001 C CNN
+F 3 "" H 2750 2500 50  0001 C CNN
+	1    2750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1350 2750 1300
+Wire Wire Line
+	2750 1700 2750 1650
+Wire Wire Line
+	2750 2050 2750 2000
+Wire Wire Line
+	2750 2500 2750 2450
+Text Label 3050 2250 0    50   ~ 0
+LED2
+$Comp
+L Transistor_FET:2N7002 Q7
+U 1 1 5F47D9F5
+P 3750 2250
+F 0 "Q7" H 3954 2296 50  0000 L CNN
+F 1 "2N7002" H 3954 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3950 2175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 3750 2250 50  0001 L CNN
+F 4 "C8545" H 3750 2250 50  0001 C CNN "LCSC Part #"
+	1    3750 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 5F47D9FB
+P 3650 1850
+F 0 "R32" H 3720 1896 50  0000 L CNN
+F 1 "100" H 3720 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3580 1850 50  0001 C CNN
+F 3 "~" H 3650 1850 50  0001 C CNN
+F 4 "C17408" H 3650 1850 50  0001 C CNN "LCSC Part #"
+	1    3650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5F47DA01
+P 3650 1500
+F 0 "D8" V 3689 1382 50  0000 R CNN
+F 1 "LED" V 3598 1382 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 3650 1500 50  0001 C CNN
+F 3 "~" H 3650 1500 50  0001 C CNN
+F 4 "C72041" H 3650 1500 50  0001 C CNN "LCSC Part #"
+	1    3650 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR090
+U 1 1 5F47DA07
+P 3650 2500
+F 0 "#PWR090" H 3650 2250 50  0001 C CNN
+F 1 "GND" H 3655 2327 50  0000 C CNN
+F 2 "" H 3650 2500 50  0001 C CNN
+F 3 "" H 3650 2500 50  0001 C CNN
+	1    3650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1350 3650 1300
+Wire Wire Line
+	3650 1700 3650 1650
+Wire Wire Line
+	3650 2050 3650 2000
+Wire Wire Line
+	3650 2500 3650 2450
+Text Label 3950 2250 0    50   ~ 0
+LED3
+$Comp
+L Transistor_FET:2N7002 Q2
+U 1 1 5F4A29BB
+P 1050 3950
+F 0 "Q2" H 1254 3996 50  0000 L CNN
+F 1 "2N7002" H 1254 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1250 3875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 1050 3950 50  0001 L CNN
+F 4 "C8545" H 1050 3950 50  0001 C CNN "LCSC Part #"
+	1    1050 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 5F4A29C1
+P 950 3550
+F 0 "R27" H 1020 3596 50  0000 L CNN
+F 1 "100" H 1020 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 880 3550 50  0001 C CNN
+F 3 "~" H 950 3550 50  0001 C CNN
+F 4 "C17408" H 950 3550 50  0001 C CNN "LCSC Part #"
+	1    950  3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5F4A29C7
+P 950 3200
+F 0 "D3" V 989 3082 50  0000 R CNN
+F 1 "LED" V 898 3082 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 950 3200 50  0001 C CNN
+F 3 "~" H 950 3200 50  0001 C CNN
+F 4 "C72041" H 950 3200 50  0001 C CNN "LCSC Part #"
+	1    950  3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR080
+U 1 1 5F4A29CD
+P 950 4200
+F 0 "#PWR080" H 950 3950 50  0001 C CNN
+F 1 "GND" H 955 4027 50  0000 C CNN
+F 2 "" H 950 4200 50  0001 C CNN
+F 3 "" H 950 4200 50  0001 C CNN
+	1    950  4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  3050 950  3000
+Wire Wire Line
+	950  3400 950  3350
+Wire Wire Line
+	950  3750 950  3700
+Wire Wire Line
+	950  4200 950  4150
+Text Label 1250 3950 0    50   ~ 0
+LED4
+$Comp
+L Transistor_FET:2N7002 Q4
+U 1 1 5F4A29DE
+P 1950 3950
+F 0 "Q4" H 2154 3996 50  0000 L CNN
+F 1 "2N7002" H 2154 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2150 3875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 1950 3950 50  0001 L CNN
+F 4 "C8545" H 1950 3950 50  0001 C CNN "LCSC Part #"
+	1    1950 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R29
+U 1 1 5F4A29E4
+P 1850 3550
+F 0 "R29" H 1920 3596 50  0000 L CNN
+F 1 "100" H 1920 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1780 3550 50  0001 C CNN
+F 3 "~" H 1850 3550 50  0001 C CNN
+F 4 "C17408" H 1850 3550 50  0001 C CNN "LCSC Part #"
+	1    1850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5F4A29EA
+P 1850 3200
+F 0 "D5" V 1889 3082 50  0000 R CNN
+F 1 "LED" V 1798 3082 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 1850 3200 50  0001 C CNN
+F 3 "~" H 1850 3200 50  0001 C CNN
+F 4 "C72041" H 1850 3200 50  0001 C CNN "LCSC Part #"
+	1    1850 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR084
+U 1 1 5F4A29F0
+P 1850 4200
+F 0 "#PWR084" H 1850 3950 50  0001 C CNN
+F 1 "GND" H 1855 4027 50  0000 C CNN
+F 2 "" H 1850 4200 50  0001 C CNN
+F 3 "" H 1850 4200 50  0001 C CNN
+	1    1850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3050 1850 3000
+Wire Wire Line
+	1850 3400 1850 3350
+Wire Wire Line
+	1850 3750 1850 3700
+Wire Wire Line
+	1850 4200 1850 4150
+Text Label 2150 3950 0    50   ~ 0
+LED5
+$Comp
+L Transistor_FET:2N7002 Q6
+U 1 1 5F4A2A01
+P 2850 3950
+F 0 "Q6" H 3054 3996 50  0000 L CNN
+F 1 "2N7002" H 3054 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3050 3875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2850 3950 50  0001 L CNN
+F 4 "C8545" H 2850 3950 50  0001 C CNN "LCSC Part #"
+	1    2850 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R31
+U 1 1 5F4A2A07
+P 2750 3550
+F 0 "R31" H 2820 3596 50  0000 L CNN
+F 1 "100" H 2820 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2680 3550 50  0001 C CNN
+F 3 "~" H 2750 3550 50  0001 C CNN
+F 4 "C17408" H 2750 3550 50  0001 C CNN "LCSC Part #"
+	1    2750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5F4A2A0D
+P 2750 3200
+F 0 "D7" V 2789 3082 50  0000 R CNN
+F 1 "LED" V 2698 3082 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 2750 3200 50  0001 C CNN
+F 3 "~" H 2750 3200 50  0001 C CNN
+F 4 "C72041" H 2750 3200 50  0001 C CNN "LCSC Part #"
+	1    2750 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR088
+U 1 1 5F4A2A13
+P 2750 4200
+F 0 "#PWR088" H 2750 3950 50  0001 C CNN
+F 1 "GND" H 2755 4027 50  0000 C CNN
+F 2 "" H 2750 4200 50  0001 C CNN
+F 3 "" H 2750 4200 50  0001 C CNN
+	1    2750 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3050 2750 3000
+Wire Wire Line
+	2750 3400 2750 3350
+Wire Wire Line
+	2750 3750 2750 3700
+Wire Wire Line
+	2750 4200 2750 4150
+Text Label 3050 3950 0    50   ~ 0
+LED6
+$Comp
+L Transistor_FET:2N7002 Q8
+U 1 1 5F4A2A24
+P 3750 3950
+F 0 "Q8" H 3954 3996 50  0000 L CNN
+F 1 "2N7002" H 3954 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3950 3875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 3750 3950 50  0001 L CNN
+F 4 "C8545" H 3750 3950 50  0001 C CNN "LCSC Part #"
+	1    3750 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 5F4A2A2A
+P 3650 3550
+F 0 "R33" H 3720 3596 50  0000 L CNN
+F 1 "100" H 3720 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3580 3550 50  0001 C CNN
+F 3 "~" H 3650 3550 50  0001 C CNN
+F 4 "C17408" H 3650 3550 50  0001 C CNN "LCSC Part #"
+	1    3650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D9
+U 1 1 5F4A2A30
+P 3650 3200
+F 0 "D9" V 3689 3082 50  0000 R CNN
+F 1 "LED" V 3598 3082 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 3650 3200 50  0001 C CNN
+F 3 "~" H 3650 3200 50  0001 C CNN
+F 4 "C72041" H 3650 3200 50  0001 C CNN "LCSC Part #"
+	1    3650 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR092
+U 1 1 5F4A2A36
+P 3650 4200
+F 0 "#PWR092" H 3650 3950 50  0001 C CNN
+F 1 "GND" H 3655 4027 50  0000 C CNN
+F 2 "" H 3650 4200 50  0001 C CNN
+F 3 "" H 3650 4200 50  0001 C CNN
+	1    3650 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3050 3650 3000
+Wire Wire Line
+	3650 3400 3650 3350
+Wire Wire Line
+	3650 3750 3650 3700
+Wire Wire Line
+	3650 4200 3650 4150
+Text Label 3950 3950 0    50   ~ 0
+LED7
+$Comp
+L power:+5V #PWR03
+U 1 1 5F4BBD44
+P 950 1200
+F 0 "#PWR03" H 950 1050 50  0001 C CNN
+F 1 "+5V" H 965 1373 50  0000 C CNN
+F 2 "" H 950 1200 50  0001 C CNN
+F 3 "" H 950 1200 50  0001 C CNN
+	1    950  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR079
+U 1 1 5F4BD8D2
+P 1850 1300
+F 0 "#PWR079" H 1850 1150 50  0001 C CNN
+F 1 "+5V" H 1865 1473 50  0000 C CNN
+F 2 "" H 1850 1300 50  0001 C CNN
+F 3 "" H 1850 1300 50  0001 C CNN
+	1    1850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR083
+U 1 1 5F4BDEE8
+P 2750 1300
+F 0 "#PWR083" H 2750 1150 50  0001 C CNN
+F 1 "+5V" H 2765 1473 50  0000 C CNN
+F 2 "" H 2750 1300 50  0001 C CNN
+F 3 "" H 2750 1300 50  0001 C CNN
+	1    2750 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR087
+U 1 1 5F4BE562
+P 3650 1300
+F 0 "#PWR087" H 3650 1150 50  0001 C CNN
+F 1 "+5V" H 3665 1473 50  0000 C CNN
+F 2 "" H 3650 1300 50  0001 C CNN
+F 3 "" H 3650 1300 50  0001 C CNN
+	1    3650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR089
+U 1 1 5F4C042F
+P 3650 3000
+F 0 "#PWR089" H 3650 2850 50  0001 C CNN
+F 1 "+5V" H 3665 3173 50  0000 C CNN
+F 2 "" H 3650 3000 50  0001 C CNN
+F 3 "" H 3650 3000 50  0001 C CNN
+	1    3650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR085
+U 1 1 5F4C6EBE
+P 2750 3000
+F 0 "#PWR085" H 2750 2850 50  0001 C CNN
+F 1 "+5V" H 2765 3173 50  0000 C CNN
+F 2 "" H 2750 3000 50  0001 C CNN
+F 3 "" H 2750 3000 50  0001 C CNN
+	1    2750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR081
+U 1 1 5F4CC57B
+P 1850 3000
+F 0 "#PWR081" H 1850 2850 50  0001 C CNN
+F 1 "+5V" H 1865 3173 50  0000 C CNN
+F 2 "" H 1850 3000 50  0001 C CNN
+F 3 "" H 1850 3000 50  0001 C CNN
+	1    1850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR046
+U 1 1 5F4CCE64
+P 950 3000
+F 0 "#PWR046" H 950 2850 50  0001 C CNN
+F 1 "+5V" H 965 3173 50  0000 C CNN
+F 2 "" H 950 3000 50  0001 C CNN
+F 3 "" H 950 3000 50  0001 C CNN
+	1    950  3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP23
+U 1 1 5F5FEFD2
+P 750 1600
+F 0 "TP23" V 945 1672 50  0000 C CNN
+F 1 "TestPoint" V 854 1672 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 950 1600 50  0001 C CNN
+F 3 "~" H 950 1600 50  0001 C CNN
+	1    750  1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	950  1550 950  1600
+Wire Wire Line
+	750  1600 950  1600
+Connection ~ 950  1600
+Wire Wire Line
+	950  1600 950  1650
+$Comp
+L Connector:TestPoint TP25
+U 1 1 5F6089D5
+P 1300 2100
+F 0 "TP25" H 1358 2218 50  0000 L CNN
+F 1 "TestPoint" H 1358 2127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 1500 2100 50  0001 C CNN
+F 3 "~" H 1500 2100 50  0001 C CNN
+	1    1300 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2250 1300 2250
+Wire Wire Line
+	1300 2250 1300 2100
+Connection ~ 1300 2250
+Wire Wire Line
+	1300 2250 1250 2250
+Wire Wire Line
+	950  1950 950  2000
+$Comp
+L Connector:TestPoint TP24
+U 1 1 5F62A97D
+P 750 2000
+F 0 "TP24" V 945 2072 50  0000 C CNN
+F 1 "TestPoint" V 854 2072 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 950 2000 50  0001 C CNN
+F 3 "~" H 950 2000 50  0001 C CNN
+	1    750  2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	750  2000 950  2000
+Connection ~ 950  2000
+Wire Wire Line
+	950  2000 950  2050
+$Comp
+L Connector:TestPoint TP26
+U 1 1 5F802A6B
+P 7650 900
+F 0 "TP26" V 7604 1088 50  0000 L CNN
+F 1 "TestPoint" V 7695 1088 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 7850 900 50  0001 C CNN
+F 3 "~" H 7850 900 50  0001 C CNN
+	1    7650 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 900  7550 900 
+Connection ~ 7550 900 
+Wire Wire Line
+	7550 900  7550 1100
+Text HLabel 8350 3100 2    50   Input ~ 0
+IO_SCL
+Text HLabel 8350 3200 2    50   Input ~ 0
+IO_SDA
+Text HLabel 8350 3400 2    50   Input ~ 0
+AIC_SCL
+Text HLabel 8350 3500 2    50   Input ~ 0
+AIC_SDA
+Text Label 6350 2600 2    50   ~ 0
+LED0
+Text Label 6350 2500 2    50   ~ 0
+LED1
+Text Label 6350 2400 2    50   ~ 0
+LED2
+Text Label 6350 2700 2    50   ~ 0
+LED3
+Text Label 6350 2300 2    50   ~ 0
+LED4
+Text Label 6350 2900 2    50   ~ 0
+LED5
+Text Label 6350 2100 2    50   ~ 0
+LED6
+Text Label 6350 1800 2    50   ~ 0
+LED7
+NoConn ~ 6350 2800
+$EndSCHEMATC
