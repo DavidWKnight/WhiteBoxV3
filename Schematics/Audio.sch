@@ -476,10 +476,6 @@ NoConn ~ 4550 2350
 NoConn ~ 4550 2750
 NoConn ~ 4550 2850
 NoConn ~ 6750 2250
-Text Label 6750 2450 0    50   ~ 0
-MONO_LOM
-Text Label 6750 2550 0    50   ~ 0
-MONO_LOP
 NoConn ~ 6750 1550
 NoConn ~ 6750 1650
 NoConn ~ 6750 1750
@@ -547,10 +543,6 @@ Wire Wire Line
 	9350 2000 9350 2650
 Wire Wire Line
 	9400 2300 8600 2300
-Text Label 8100 2100 2    50   ~ 0
-MONO_LOM
-Text Label 8100 2300 2    50   ~ 0
-MONO_LOP
 Text GLabel 4050 6200 0    50   Input ~ 0
 3V3A
 Wire Wire Line
@@ -788,20 +780,6 @@ Wire Wire Line
 Wire Wire Line
 	2600 3300 2550 3300
 $Comp
-L Connector:TestPoint TP7
-U 1 1 5F895311
-P 4100 6100
-F 0 "TP7" H 4158 6218 50  0000 L CNN
-F 1 "TestPoint" H 4158 6127 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4300 6100 50  0001 C CNN
-F 3 "~" H 4300 6100 50  0001 C CNN
-	1    4100 6100
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 6200 4100 6100
-Connection ~ 4100 6200
-$Comp
 L power:GND #PWR091
 U 1 1 5F99EF28
 P 6950 3550
@@ -823,4 +801,12 @@ Wire Wire Line
 	6950 3450 6950 3550
 Text Notes 2200 3200 0    50   ~ 0
 I2C Address 0011000
+Text Label 6750 2550 0    50   ~ 0
+MONO_LOP
+Text Label 6750 2450 0    50   ~ 0
+MONO_LOM
+Text Label 8100 2300 2    50   ~ 0
+MONO_LOP
+Text Label 8100 2100 2    50   ~ 0
+MONO_LOM
 $EndSCHEMATC

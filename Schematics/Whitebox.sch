@@ -175,4 +175,78 @@ Wire Wire Line
 	2800 5350 3250 5350
 Wire Wire Line
 	2250 5350 2800 5350
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F2030DC
+P 4800 5250
+F 0 "H1" V 5037 5253 50  0000 C CNN
+F 1 "MountingHole_Pad" V 4946 5253 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 4800 5250 50  0001 C CNN
+F 3 "~" H 4800 5250 50  0001 C CNN
+	1    4800 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F20378E
+P 4800 5650
+F 0 "H2" V 5037 5653 50  0000 C CNN
+F 1 "MountingHole_Pad" V 4946 5653 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 4800 5650 50  0001 C CNN
+F 3 "~" H 4800 5650 50  0001 C CNN
+	1    4800 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5F204455
+P 4800 6050
+F 0 "H3" V 5037 6053 50  0000 C CNN
+F 1 "MountingHole_Pad" V 4946 6053 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 4800 6050 50  0001 C CNN
+F 3 "~" H 4800 6050 50  0001 C CNN
+	1    4800 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5F20445B
+P 4800 6450
+F 0 "H4" V 5037 6453 50  0000 C CNN
+F 1 "MountingHole_Pad" V 4946 6453 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 4800 6450 50  0001 C CNN
+F 3 "~" H 4800 6450 50  0001 C CNN
+	1    4800 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR093
+U 1 1 5F20465A
+P 5200 6650
+F 0 "#PWR093" H 5200 6400 50  0001 C CNN
+F 1 "GND" H 5205 6477 50  0000 C CNN
+F 2 "" H 5200 6650 50  0001 C CNN
+F 3 "" H 5200 6650 50  0001 C CNN
+	1    5200 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5250 5200 5250
+Wire Wire Line
+	4900 5650 5200 5650
+Wire Wire Line
+	5200 5250 5200 5650
+Connection ~ 5200 5650
+Wire Wire Line
+	5200 5650 5200 6050
+Wire Wire Line
+	4900 6050 5200 6050
+Connection ~ 5200 6050
+Wire Wire Line
+	5200 6050 5200 6450
+Wire Wire Line
+	4900 6450 5200 6450
+Connection ~ 5200 6450
+Wire Wire Line
+	5200 6450 5200 6650
 $EndSCHEMATC

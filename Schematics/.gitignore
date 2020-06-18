@@ -1,2 +1,4 @@
 # Need KiCAD Libs
 !*.lib
+
+3dmodels/

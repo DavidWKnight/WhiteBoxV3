@@ -233,8 +233,6 @@ Wire Wire Line
 	8600 4400 8600 4300
 Connection ~ 8600 4300
 Wire Wire Line
-	8600 4300 8700 4300
-Wire Wire Line
 	8550 4100 8750 4100
 Wire Wire Line
 	8750 4100 8750 4000
@@ -681,37 +679,37 @@ Text Label 10200 2450 2    50   ~ 0
 IO_SW2
 Text Label 10200 3100 2    50   ~ 0
 IO_SW3
-Text Label 9150 1450 0    50   ~ 0
-ENC0_A
-Text Label 9150 1550 0    50   ~ 0
-ENC0_B
-Text Label 9150 1650 0    50   ~ 0
-ENC1_A
-Text Label 9150 1750 0    50   ~ 0
-ENC1_B
 Text Label 9150 1850 0    50   ~ 0
-ENC2_A
+ENC0_A
 Text Label 9150 1950 0    50   ~ 0
-ENC2_B
+ENC0_B
 Text Label 9150 2050 0    50   ~ 0
-ENC3_A
+ENC1_A
 Text Label 9150 2150 0    50   ~ 0
+ENC1_B
+Text Label 9150 1450 0    50   ~ 0
+ENC2_A
+Text Label 9150 1550 0    50   ~ 0
+ENC2_B
+Text Label 9150 1650 0    50   ~ 0
+ENC3_A
+Text Label 9150 1750 0    50   ~ 0
 ENC3_B
 Text Label 9150 2350 0    50   ~ 0
 ENC0_SW
 Text Label 9150 2450 0    50   ~ 0
 ENC1_SW
-Text Label 9150 2550 0    50   ~ 0
-ENC2_SW
-Text Label 9150 2650 0    50   ~ 0
-ENC3_SW
-Text Label 9150 2750 0    50   ~ 0
-IO_SW0
-Text Label 9150 2850 0    50   ~ 0
-IO_SW1
 Text Label 9150 2950 0    50   ~ 0
-IO_SW2
+ENC2_SW
 Text Label 9150 3050 0    50   ~ 0
+ENC3_SW
+Text Label 9150 2550 0    50   ~ 0
+IO_SW0
+Text Label 9150 2650 0    50   ~ 0
+IO_SW1
+Text Label 9150 2750 0    50   ~ 0
+IO_SW2
+Text Label 9150 2850 0    50   ~ 0
 IO_SW3
 Wire Wire Line
 	8650 1250 8650 1200
@@ -959,12 +957,12 @@ ICSP
 $Comp
 L power:+5V #PWR039
 U 1 1 5EF544B0
-P 1650 4250
-F 0 "#PWR039" H 1650 4100 50  0001 C CNN
-F 1 "+5V" H 1665 4423 50  0000 C CNN
-F 2 "" H 1650 4250 50  0001 C CNN
-F 3 "" H 1650 4250 50  0001 C CNN
-	1    1650 4250
+P 1650 3700
+F 0 "#PWR039" H 1650 3550 50  0001 C CNN
+F 1 "+5V" H 1665 3873 50  0000 C CNN
+F 2 "" H 1650 3700 50  0001 C CNN
+F 3 "" H 1650 3700 50  0001 C CNN
+	1    1650 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -975,7 +973,7 @@ Wire Wire Line
 	1750 4300 1750 4350
 Connection ~ 1650 4300
 Wire Wire Line
-	1650 4300 1650 4250
+	1650 4300 1650 3750
 Text HLabel 6150 4050 2    50   Input ~ 0
 IO_SDA
 Text HLabel 6150 3950 2    50   Input ~ 0
@@ -1270,17 +1268,6 @@ Wire Wire Line
 	4000 3400 4000 3350
 Wire Wire Line
 	5800 3950 5800 3750
-$Comp
-L power:+5V #PWR053
-U 1 1 5F0D62E3
-P 6100 3350
-F 0 "#PWR053" H 6100 3200 50  0001 C CNN
-F 1 "+5V" H 6115 3523 50  0000 C CNN
-F 2 "" H 6100 3350 50  0001 C CNN
-F 3 "" H 6100 3350 50  0001 C CNN
-	1    6100 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6100 3450 6100 3400
 Wire Wire Line
@@ -1497,17 +1484,14 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP34
 U 1 1 5F66C142
-P 8800 4100
-F 0 "TP34" V 8846 4288 50  0000 L CNN
-F 1 "TestPoint" V 8755 4288 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 9000 4100 50  0001 C CNN
-F 3 "~" H 9000 4100 50  0001 C CNN
-	1    8800 4100
-	0    1    -1   0   
+P 8950 4350
+F 0 "TP34" V 8996 4538 50  0000 L CNN
+F 1 "TestPoint" V 8905 4538 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 9150 4350 50  0001 C CNN
+F 3 "~" H 9150 4350 50  0001 C CNN
+	1    8950 4350
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	8800 4100 8750 4100
-Connection ~ 8750 4100
 $Comp
 L Connector:TestPoint TP33
 U 1 1 5F67AD00
@@ -1656,7 +1640,7 @@ Wire Wire Line
 Connection ~ 2950 900 
 Wire Wire Line
 	2950 900  2950 1100
-Text Notes 1250 3900 0    100  ~ 0
+Text Notes 2500 3600 0    100  ~ 0
 IO Controller
 $Comp
 L power:PWR_FLAG #FLG0104
@@ -1672,4 +1656,79 @@ $EndComp
 Wire Wire Line
 	3050 1000 2850 1000
 Connection ~ 2850 1000
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5F0927D7
+P 6100 3350
+F 0 "#PWR0102" H 6100 3200 50  0001 C CNN
+F 1 "+3V3" H 6115 3523 50  0000 C CNN
+F 2 "" H 6100 3350 50  0001 C CNN
+F 3 "" H 6100 3350 50  0001 C CNN
+	1    6100 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F12182E
+P 850 3950
+AR Path="/5EE67B04/5F12182E" Ref="C?"  Part="1" 
+AR Path="/5EE77A0E/5F12182E" Ref="C30"  Part="1" 
+F 0 "C30" H 735 3904 50  0000 R CNN
+F 1 "1uF" H 735 3995 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 888 3800 50  0001 C CNN
+F 3 "~" H 850 3950 50  0001 C CNN
+F 4 "C28323" H 850 3950 50  0001 C CNN "LCSC Part #"
+	1    850  3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F121835
+P 1200 3950
+AR Path="/5EE67B04/5F121835" Ref="C?"  Part="1" 
+AR Path="/5EE77A0E/5F121835" Ref="C31"  Part="1" 
+F 0 "C31" H 1085 3904 50  0000 R CNN
+F 1 "0.1uF" H 1085 3995 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1238 3800 50  0001 C CNN
+F 3 "~" H 1200 3950 50  0001 C CNN
+F 4 "C28233" H 1200 3950 50  0001 C CNN "LCSC Part #"
+	1    1200 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR053
+U 1 1 5F1484CF
+P 850 4200
+F 0 "#PWR053" H 850 3950 50  0001 C CNN
+F 1 "GND" H 855 4027 50  0000 C CNN
+F 2 "" H 850 4200 50  0001 C CNN
+F 3 "" H 850 4200 50  0001 C CNN
+	1    850  4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3750 1200 3750
+Wire Wire Line
+	850  3750 850  3800
+Connection ~ 1650 3750
+Wire Wire Line
+	1650 3750 1650 3700
+Wire Wire Line
+	1200 3800 1200 3750
+Connection ~ 1200 3750
+Wire Wire Line
+	1200 3750 850  3750
+Wire Wire Line
+	850  4100 850  4150
+Wire Wire Line
+	850  4150 1200 4150
+Wire Wire Line
+	1200 4150 1200 4100
+Connection ~ 850  4150
+Wire Wire Line
+	850  4150 850  4200
+Wire Wire Line
+	8950 4300 8950 4350
+Wire Wire Line
+	8600 4300 8950 4300
 $EndSCHEMATC

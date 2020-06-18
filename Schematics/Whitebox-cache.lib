@@ -463,6 +463,22 @@ X USB1.D- 9 1000 1600 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# Mechanical_MountingHole_Pad
+#
+DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # Regulator_Linear_LP2985-1.8
 #
 DEF Regulator_Linear_LP2985-1.8 U 0 10 Y Y 1 F N
@@ -721,6 +737,22 @@ X AVSS_DAC 26 2200 -200 300 L 59 59 2 1 W
 X DVDD 36 0 -500 300 R 59 59 2 1 W
 X DVSS 42 2200 -500 300 L 59 59 2 1 W
 X IOVDD 44 0 -700 300 R 59 59 2 1 W
+ENDDRAW
+ENDDEF
+#
+# Whitebox_star_ground
+#
+DEF Whitebox_star_ground P 0 40 Y Y 1 F N
+F0 "P" 0 0 50 H V C CNN
+F1 "Whitebox_star_ground" 50 200 50 H V C CNN
+F2 "" 300 250 50 H I C CNN
+F3 "" 300 250 50 H I C CNN
+DRAW
+A 25 -150 266 1312 488 0 1 0 N -150 50 200 50
+C -150 0 50 0 1 0 N
+C 200 0 50 0 1 0 N
+X ~ 1 -300 0 100 R 50 50 1 1 W
+X ~ 1 350 0 100 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
